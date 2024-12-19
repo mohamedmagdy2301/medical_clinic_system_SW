@@ -17,7 +17,6 @@ A Java-based desktop application designed to manage patient records, doctor sche
 3. **Builder Pattern**: For constructing appointments with multiple optional fields.
 4. **Prototype Pattern**: For duplicating existing records.
 5. **Adapter Pattern**: For integrating different data formats with the UI.
-6. **Proxy Pattern**: For secure access to database records.
 
 ## Technologies Used
 
@@ -77,10 +76,10 @@ java MainUI
 ```
 
 ## Screenshots
-| Doctor Schedules Tab | Appointments Tab |
-|---|---|
-| ![Doctor Schedules](https://github.com/mohamedmagdy2301/medical_clinic_system_SW/blob/main/Screenshot%202024-12-20%20013323.png)
- | ![Appointments](https://github.com/mohamedmagdy2301/medical_clinic_system_SW/blob/main/Screenshot%202024-12-20%20013342.png) |
+### Doctor Schedules Tab 
+ ![Doctor Schedules](Screenshot%202024-12-20%20013323.png)
+ ###  Appointments Tab 
+  ![Appointments](Screenshot%202024-12-20%20013342.png) 
 
 
 ## Team Members
@@ -90,22 +89,37 @@ java MainUI
 -  [**Gehad Ahmed**](https://github.com/gehad-Ahmed30)
 -  [**Nourhan Zayed**](https://github.com/Nour-Zayed)
 
+  
+## Contributing
 
-*(Replace placeholder names with the actual team members and their roles.)*
+Contributions are highly encouraged! If you would like to contribute to `Medical Clinic Management System`, please follow these steps:
 
-## Future Enhancements
+1. **Fork the Repository**.
+2. **Create a New Branch**:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message"
+   ```
+4. **Push to the Branch**:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. **Open a Pull Request**.
 
-- **Notifications**: Add email or SMS notifications for appointments.
-- **Reports**: Generate summary reports for patient visits and schedules.
-- **Role-Based Access**: Implement admin and doctor-specific user roles.
+## Congratulations
+
+You’ve successfully integrated `Medical Clinic Management System` into your Flutter app! For more advanced features and customization options.
+
+If you found this guide helpful, don’t forget to ⭐ star this repository on GitHub to show your support!
+
+Thank you for reading!
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-## Contribution
-
-Contributions are welcome! Please create a fork of the repository and submit a pull request with your changes.
 
 ## Contact
 
