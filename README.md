@@ -79,10 +79,10 @@ java MainUI
 ## Screenshots
 
 ### Doctor Schedules Tab
-![Doctor Schedules Screenshot](path-to-screenshot/doctor-schedules.png)
+![Doctor Schedules](Screenshot 2024-12-20 013323.png)
 
 ### Appointments Tab
-![Appointments Screenshot](path-to-screenshot/appointments.png)
+![Appointments](Screenshot 2024-12-20 013342.png)
 
 ## Team Members
 
