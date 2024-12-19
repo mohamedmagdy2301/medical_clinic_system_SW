@@ -79,10 +79,10 @@ java MainUI
 ## Screenshots
 
 ### Doctor Schedules Tab
-![Doctor Schedules](Screenshot 2024-12-20 013323.png)
+![Doctor Schedules](https://github.com/mohamedmagdy2301/medical_clinic_system_SW/blob/main/Screenshot%202024-12-20%20013323.png)
 
 ### Appointments Tab
-![Appointments](Screenshot 2024-12-20 013342.png)
+![Appointments](https://github.com/mohamedmagdy2301/medical_clinic_system_SW/blob/main/Screenshot%202024-12-20%20013342.png)
 
 ## Team Members
 
