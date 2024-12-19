@@ -77,12 +77,11 @@ java MainUI
 ```
 
 ## Screenshots
+| Doctor Schedules Tab | Appointments Tab |
+|---|---|
+| ![Doctor Schedules](https://github.com/mohamedmagdy2301/medical_clinic_system_SW/blob/main/Screenshot%202024-12-20%20013323.png)
+ | ![Appointments](https://github.com/mohamedmagdy2301/medical_clinic_system_SW/blob/main/Screenshot%202024-12-20%20013342.png) |
 
-### Doctor Schedules Tab
-![Doctor Schedules](https://github.com/mohamedmagdy2301/medical_clinic_system_SW/blob/main/Screenshot%202024-12-20%20013323.png)
-
-### Appointments Tab
-![Appointments](https://github.com/mohamedmagdy2301/medical_clinic_system_SW/blob/main/Screenshot%202024-12-20%20013342.png)
 
 ## Team Members
 
