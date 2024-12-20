@@ -1,3 +1,4 @@
+
 import appointment.Appointment;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -129,10 +130,17 @@ public class MainUI extends JFrame {
         JLabel availableDaysLabel = new JLabel("Available Date (yyyy-MM-dd):");
 
         doctorNameField = new JTextField(20);
-        JTextField availableDaysField = new JTextField(20);
+        JSpinner availableDaysSpinner = new JSpinner(new SpinnerDateModel());
+        JSpinner.DateEditor dateEditor = new JSpinner.DateEditor(availableDaysSpinner, "yyyy-MM-dd");
+        availableDaysSpinner.setEditor(dateEditor);
 
         JButton addScheduleButton = new JButton("Add Schedule");
-        addScheduleButton.addActionListener(e -> addDoctorSchedule(doctorNameField.getText().trim(), availableDaysField.getText().trim()));
+        addScheduleButton.addActionListener(e -> {
+            String doctorName = doctorNameField.getText().trim();
+            Date availableDate = (Date) availableDaysSpinner.getValue();
+            String formattedDate = new SimpleDateFormat("yyyy-MM-dd").format(availableDate);
+            addDoctorSchedule(doctorName, formattedDate);
+        });
 
         // Layout
         gbc.gridx = 0;
@@ -145,7 +153,7 @@ public class MainUI extends JFrame {
         gbc.gridy = 1;
         inputPanel.add(availableDaysLabel, gbc);
         gbc.gridx = 1;
-        inputPanel.add(availableDaysField, gbc);
+        inputPanel.add(availableDaysSpinner, gbc);
 
         gbc.gridx = 1;
         gbc.gridy = 2;
@@ -233,7 +241,7 @@ public class MainUI extends JFrame {
         try (Connection connection = connectToDatabase()) {
             String sql = "SELECT doctor_name, available_date FROM DoctorSchedules";
             try (PreparedStatement stmt = connection.prepareStatement(sql);
-                 ResultSet rs = stmt.executeQuery()) {
+                    ResultSet rs = stmt.executeQuery()) {
 
                 while (rs.next()) {
                     String doctorName = rs.getString("doctor_name");
@@ -255,7 +263,7 @@ public class MainUI extends JFrame {
         try (Connection connection = connectToDatabase()) {
             String sql = "SELECT patient_name, doctor_name, appointment_date FROM PatientAppointments";
             try (PreparedStatement stmt = connection.prepareStatement(sql);
-                 ResultSet rs = stmt.executeQuery()) {
+                    ResultSet rs = stmt.executeQuery()) {
 
                 while (rs.next()) {
                     String patientName = rs.getString("patient_name");
